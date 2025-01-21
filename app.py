@@ -233,4 +233,4 @@ def chem_info_on_hover(hoverData):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=8000)
