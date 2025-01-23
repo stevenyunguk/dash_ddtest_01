@@ -19,7 +19,6 @@
 # RUN pip install -r /app/requirements.txt
 
 # CMD ["python", "app.py"]
-
 # Use an official Python runtime as a base image
 FROM python:3.9-slim-buster
 
@@ -34,6 +33,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev \
     libpq-dev \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the requirements file into the container
