@@ -46,5 +46,8 @@ COPY . /app/
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Expose the port the app runs on
+EXPOSE 80
+
 # Define the command to run the application
 CMD ["python", "app.py"]
